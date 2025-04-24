@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 1 : Creative Website Building Practices (HTML + CSS)</title>
+    <style>
+    *{  margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+    html,body{
+        width: 100%;
+        height: 100%;
+    }
+    header{
+        width: 100%;
+        background-color: rgb(40, 169, 40);
+        color: white;
+        text-align: center;
+    }
+    header div{
+        padding: 25px 0px;
+    }
+    header p{
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    header nav, footer{
+        width: 100%;
+        background-color: #32312d        ; 
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    header nav a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+    }
+    body{
+        background-color: #FAF9F6;
+    }
+    section{
+        background-color: white;
+        width: 75%;
+        margin: 0px auto;
+        padding: 1rem;
+        padding-top: 0.2rem;
+        margin-bottom: 50px;
+    }
+    section h3{
+        border-left: 5px solid rgb(40, 169, 40);
+        padding: 5px;
+        padding-top: 0;
+        margin-top: 40px;
+    }
+    .prace{
+        border-left: 5px solid rgb(40, 169, 40);
+        margin: 15px 0;
+        padding: 0.5rem;
+        font-size: smaller;
+        background-color:rgba(178, 244, 178, 0.805);
+    }
+    .prac{
+        margin: 15px 0;
+        border: 1px solid lightslategray;
+        background-color: #FAF9F6;
+        border-radius: 2px;
+        padding: 0.8rem;
+    }
+    </style>
+</head>
+<body>
+    <header style="">
+        <div class="hdiv">
+            <h2 >HTML + CSS Beginner Practice Guide</h2>
+            <p>Understand basic HTML tags and CSS properties</p>
+        </div>
+        <nav >
+            <a href="">HTML</a> <br> <a href="">CSS</a><br><a href="">Practice</a>
+        </nav>
+    </header>
+    <section>
+        <h3> 📘 HTML Basics</h3>
+        <p class="prac"><strong>&lt;html&gt; -</strong>  Root element that wraps entire HTML documnet</p>
+        
+        <p class="prac"><strong>&lt;head&gt; -</strong>  Contains metadata like title, links to CSS, charset.</p>
+        
+        <p class="prac"><strong>&lt;body&gt; -</strong>  Visible part of HTML page.</p>
+        <p class="prac"><strong>&lt;h1&gt; to &lt;h6&gt; -</strong>  Headings, h1 is largest.</p>
+        <p class="prac"><strong>&lt;p&gt; -</strong>  Paragraph text.</p>
+        <p class="prac"><strong>&lt;div&gt; -</strong>  Generic container block.</p>
+        <p class="prac"><strong>&lt;span&gt; -</strong>  Inline container.</p>
+        <p class="prac"><strong>&lt;a href&gt; -</strong>  Hyperlink.</p>
+        <p class="prac"><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; -</strong>  Unordered, ordered lists and items.</p>
+        <p class="prac"><strong>&lt;table&gt; -</strong>  Table structure with &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;.</p>
+        
+        <h3> 🎨 CSS Basics</h3>
+        <p class="prac"><strong>color:</strong>  Changes text color.</p>
+        <p class="prac"><strong>background-color:</strong>  Changes text color.</p>
+        <p class="prac"><strong>padding:</strong>  Space inside the element.</p>
+        <p class="prac"><strong>margin:</strong>  Space outside the element.</p>
+        <p class="prac"><strong>border:</strong>  Adds outline around the element.</p>
+        <p class="prac"><strong>font-size:</strong>  Controls text size.</p>
+        <p class="prac"><strong>text-align:</strong>  Aligns text.</p>
+        <p class="prac"><strong>display:</strong>  Controls layout(block, inline, flex).</p>
+        <p class="prac"><strong>flexbox:</strong>  Layount system for flexible items</p>
+        <p class="prac"><strong>box-shadow:</strong>  Adds shadow around the element</p>
+
+        <h3>🧠 Practice Examples</h3>
+        <p class="prace">Try modifying and margin values ovserve changes</p>
+        <p class="prace" style="border: none; padding: 20px; background-color: rgba(75, 112, 75, 0.805);"><strong>Box 1:</strong> Padding 20px | Margin: 10px </p>
+        <p class="prace" style="border: none; padding:0; margin: 30px 0; background-color: lightpink;"><strong>Box 1:</strong> Padding 20px | Margin: 10px </p>
+        <div style="display: flex; gap: 15px;">
+            <div style="width: fit-content; height: 50px;background-color: lightblue; padding: 20px;"> Flex Item 1</div>
+            <div style="width: fit-content; height: 50px;background-color: lightgreen; padding: 20px;"> Flex Item 2</div>
+        </div>
+        <p class="prace"> <mark style="background-color: lightblue;">Experiment with text-align, font-size, and border-radius:</mark></p>
+        <div style="text-align: center; border: 1px dashed rgb(40, 169, 40); padding: 5px;">
+            Centered and styled text!
+        </div>
+        <br>
+
+        <div style="background-color: wheat; border-radius: 10px; padding: 15px;">
+            Rounded corner alert box
+        </div>
+    </section>
+    <footer style="color: white;">
+        Made with ♥️ for Beginners | Practice Makes Perfect!
+    </footer>
+</body>
+</html>
