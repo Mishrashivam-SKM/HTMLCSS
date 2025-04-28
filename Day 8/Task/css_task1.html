@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>1.Task</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height:100%;
+        }
+        /*1 body{
+            display: flex;
+        }
+        .f1{
+            background-color: lightgray;
+            justify-content: center;
+            align-items: center;
+            padding: 10rem;
+            width: fit-content;
+            height: fit-content;
+        }
+        .f1 input, .f1 button{
+            margin: 0.3rem;
+            border-radius: 10px;
+            padding: 0.5rem;
+        }
+         */
+         /* 2input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="password"]:focus {
+      border-color: #4CAF50;
+    }
+
+    input[type="password"]::placeholder {
+      color: #aaa;
+    }    */
+    /* 3
+    input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    }
+    label:hover{
+        color: gray;
+    } */
+    
+    /*4 select{
+        width: 100%;
+        border: 2px solid lightcoral ;
+        border-radius: 10px;
+        padding: 5rem;
+        background-color: lightpink;
+    }
+    select option{
+        width: 50%;
+        padding: 1rem;
+    }
+    select:hover{
+        background-color: lightsalmon;
+    } */
+     /* 5 button{
+        background-color: lightseagreen;
+     }
+     button:hover{
+        background-color: lightblue;
+     } */
+
+     /*6 textarea{
+        border-radius: 10px;
+        border: 5px solid black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.5rem;
+     }
+     textarea:focus{
+        border-color: gray;
+     } */
+     /* 8 form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+input[type="text"], input[type="email"], button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+} */
+      input:valid{
+        border-color: green;
+      }
+      input:invalid{
+        border-color: red;
+        
+      }
+      input:invalid:focus {
+        box-shadow: 0 0 5px red;
+        }
+
+    </style>
+</head>
+<body>
+    <!--1 <form action="/submit-form" method="POST" class="f1">
+        <label for="name" >Name:</label>
+        <input type="text" id="name" name="name" required>
+      <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      <br>
+        <button type="submit">Submit</button>
+      </form> -->
+
+      <!--2 <form action="/submit-form" method="POST">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+      
+        <button type="submit">Submit</button>
+      </form> -->
+
+      <!--3 <form action="/submit-form" method="POST">
+        <label><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to Newsletter</label><br>
+      
+        <label><input type="radio" id="male" name="gender" value="Male"> Male</label>
+        <label><input type="radio" id="female" name="gender" value="Female"> Female</label>
+      
+        <button type="submit">Submit</button>
+      </form> -->
+
+      
+      <!--4 <form action="/submit-form" method="POST">
+        <label for="country">Select your country:</label>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="canada">Canada</option>
+        </select>
+      
+        <button type="submit">Submit</button>
+      </form> -->
+      
+      <!-- 5 <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form> -->
+
+      <!--6 <form action="/submit-form" method="POST">
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback..."></textarea>
+      
+        <button type="submit">Submit</button>
+      </form> -->
+      
+      <!--7 <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <button type="submit">Submit</button>
+      </form> -->
+      
+      <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <button type="submit">Submit</button>
+      </form>
+      
+      
+      
+      
+      
+</body>
+</html>

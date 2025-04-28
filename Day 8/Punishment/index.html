@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Punishment</title>
+</head>
+<body>
+    <form action="/submit" action="Post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" name="name" id="name" placeholder="Poonam K"> <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="you@example.com"> <br> <br>
+
+        <label for="phone">Phone Number:</label> <br>
+        <input type="text" min="10" max="10" placeholder="123-456-7890"> <br><br>
+
+        <fieldset>
+            <legend><label for="gender">Geneder:</label></legend>
+            <input type="radio" name="gender" id="gender" value="Male"> Male <br>
+            <input type="radio" name="gender" id="gender" value="Female"> Female <br>
+            <input type="radio" name="gender" id="gender" value="Other"> Other <br>
+        </fieldset> <br>
+
+        <label for="subscribe">Subscribe to our newsletter:</label> <input type="checkbox" name="Subscribe" id="subscribe"> <br>
+        <br>
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" name="resume" id="resume" accept="">  <br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" placeholder="Write your message here..."></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
