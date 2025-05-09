@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selector Exercises</title>
+</head>
+<body>
+
+  <!-- 🔸 Exercise 1: Style a Simple Profile Card -->
+  <style>
+    .card {
+      background-color: lightgray;
+      padding: 10px;
+    }
+    #name {
+      color: darkblue;
+    }
+    .bio {
+      font-style: italic;
+    }
+    .card a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+
+  <div class="card">
+    <h2 id="name">Alex Johnson</h2>
+    <p class="bio">Front-end Developer from New York</p>
+    <a href="#">View Profile</a>
+  </div>
+
+  <hr>
+
+  <!-- 🔸 Exercise 2: Navigation Menu Styling -->
+  <style>
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav a {
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: red;
+    }
+    nav ul li:first-child a {
+      background-color: lightblue;
+    }
+  </style>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <hr>
+
+  <!-- 🔸 Exercise 3: Form Field Focus -->
+  <style>
+    input {
+      border: 1px solid lightgray;
+      padding: 5px;
+    }
+    input:focus {
+      border-color: blue;
+    }
+    button {
+      background-color: green;
+      color: white;
+      padding: 6px 12px;
+      border: none;
+    }
+    input[type="email"] {
+      background-color: #f9f9ff;
+    }
+  </style>
+
+  <form>
+    <label>Email:</label>
+    <input type="email" />
+
+    <label>Password:</label>
+    <input type="password" />
+
+    <button>Login</button>
+  </form>
+
+  <hr>
+
+  <!-- 🔸 Exercise 4: Use Pseudo-elements -->
+  <style>
+    article h3::before {
+      content: "";
+      display: block;
+      height: 2px;
+      background: red;
+      margin-bottom: 5px;
+    }
+    article p::first-line {
+      text-transform: capitalize;
+    }
+    article p::before {
+      content: "* ";
+      color: blue;
+      font-weight: bold;
+    }
+  </style>
+
+  <article>
+    <h3>Breaking News</h3>
+    <p>some important text goes here.</p>
+  </article>
+
+  <hr>
+
+  <!-- 🔸 Exercise 5: Advanced Targeting -->
+  <style>
+    .blog h3 {
+      font-weight: bold;
+    }
+    .blog article:nth-child(3) p {
+      color: darkgreen;
+    }
+    .blog article:nth-child(3) {
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+  </style>
+
+  <section class="blog">
+    <h2>Blog Posts</h2>
+    <article>
+      <h3>Post One</h3>
+      <p>Text of post one.</p>
+    </article>
+    <article>
+      <h3>Post Two</h3>
+      <p>Text of post two.</p>
+    </article>
+  </section>
+
+</body>
+</html>
